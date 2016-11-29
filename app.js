@@ -9,7 +9,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var appInsights = require("applicationinsights");
-appInsights.setup("ca5b8864-36d6-4a95-8107-001c7aca2bfa").start();
+
+appInsights.setup(process.env.APP_INSIGHTS||"ca5b8864-36d6-4a95-8107-001c7aca2bfa").start();
 
 var app = express();
 

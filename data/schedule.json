@@ -1,0 +1,38 @@
+[{
+		"room" : "Lindbergh 1",
+		"speaker" : "Cornell Knulst",
+		"title" : "Chatops",
+		"description" : "ntb",
+		"starttime" : "9-12-2016 10:00",
+		"endtime" : "9-12-2016 11:00"
+	}, {
+		"room" : "Lindbergh 1",
+		"speaker" : "Gerald Versluis",
+		"title" : "Playtime is over: building real apps with Xamarin.Forms ",
+		"description" : "We kunnen onderhand wel zeggen dat Xamarin volwassen is geworden. Het is de hobby-fase voorbij en het is genoeg doorontwikkeld om er echte apps mee te bouwen! Tijdens deze sessie zal ik laten zien hoe je gemakkelijk een architectuur opzet voor je Xamarin.Forms app compleet met MVVM, data-binding en commanding, communicatie met een REST API backend, layouts in XAML, en alles wat er verder nog binnen de tijd past",
+		"starttime" : "9-12-2016 11:15",
+		"endtime" : "9-12-2016 12:15"
+	}, {
+		"room" : "",
+		"speaker" : "",
+		"title" : "Lunch",
+		"description" : "",
+		"starttime" : "9-12-2016 12:15",
+		"endtime" : "9-12-2016 13:00",
+		"special" : true
+	}, {
+		"room" : "Lindbergh 1",
+		"speaker" : "Dennis Doomen",
+		"title" : "How to practice TDD without shooting yourself in the foot",
+		"description" : "It's 2016, so practices like Test Driven Development (TDD) have long found their way into organizations. However, the practices and principles to keep those unit tests maintainable haven't really changed. Still, I regularly talk to developers that somehow ended up with an incomprehensible unmaintainable set of unit tests that they once believed in, but are now holding them back. So in this session I like to provide a refresh of those fundamental ideas and talk about why you should practice TDD, revealing intentions, naming conventions, state versus interaction based testing, and how to stay out of the debugger hell with proper mocking and assertion frameworks. And even if you believe you are well versed in the testing realm, join me anyway. Maybe we can learn some tips & tricks from the audience as well. Looking forward to it!",
+		"starttime" : "9-12-2016 13:00",
+		"endtime" : "9-12-2016 14:00"
+	}, {
+		"room" : "Lindbergh 1",
+		"speaker" : "Timmy Kokke",
+		"title" : "Progressive Web Apps",
+		"description" : "Hebben native apps nog een toekomst? Of ligt het lot in de handen van het web? Anders dan bij traditionele applicaties, bieden Progressive Web Apps een hybride oplossing tussen normale websites en mobiele applicaties. Dit nieuwe model combineert features van moderne browsers met de voordelen van een mobiele app. Grote browserfabrikanten als Google, Apple en Microsoft dragen bij aan de ontwikkeling van nieuwe webstandaarden die een veilige, native-like app ervaring gaan bieden vanuit het web. In deze sessie bekijken we wat een Progressive Web App is. Ook kijken we hoe we moderne webstandaarden als Service Workers en het W3C Manifest kunnen gebruiken om een bestaande, responsive website uit te breiden tot een Progressive Web App.",
+		"starttime" : "9-12-2016 15:30",
+		"endtime" : "9-12-2016 16:30"
+	}
+]
