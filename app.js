@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var appInsights = require("applicationinsights");
-appInsights.setup("921da604-dc4c-4bf8-b245-1c2b8ff733c3").start();
+appInsights.setup("ca5b8864-36d6-4a95-8107-001c7aca2bfa").start();
 
 var app = express();
 
