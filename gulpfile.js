@@ -78,6 +78,12 @@ gulp.task('js', function () {
   .pipe(gulp.dest("public/scripts"));
 });
 
-
+gulp.task('js-release', function () {
+  return gulp.src("src/index.js")
+  .pipe(named())
+  .pipe(doWebpack(true))
+  .pipe(gulp.dest("public/scripts"));
+});
 
 gulp.task("compile", ['copy-images', 'sass', 'js']);
+gulp.task("compile-release", ['copy-images', 'sass', 'js-release']);

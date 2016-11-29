@@ -1,7 +1,7 @@
 require('bootstrap');
 
-(function(){
-
+(function () {
+    console.log(ai);
     console.log('loaded!');
 
 })();
