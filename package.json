@@ -10,6 +10,7 @@
     "name": "menta"
   },
   "dependencies": {
+    "applicationinsights": "^0.17.0",
     "body-parser": "^1.15.0",
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
@@ -21,6 +22,5 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-zip": "^3.2.0"
-
   }
 }
