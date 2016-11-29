@@ -1,5 +1,6 @@
 ﻿var zip = require("gulp-zip");
 var gulp = require('gulp');
+var pug = require('gulp-pug');
 
 gulp.task("deploy", function () {
   return gulp.src(["**"])
@@ -10,7 +11,7 @@ gulp.task("deploy", function () {
 const fs = require('fs');
 
 gulp.task('compile', function () {
-  //gulp.src(['**/*.ts', '!**/node_modules/**'])
-  //  .pipe(typescript())
-  //  .pipe(gulp.dest('./'))
+  gulp.src(['views/*.pug'])
+   .pipe(pug())
+   .pipe(gulp.dest('./'))
 });
