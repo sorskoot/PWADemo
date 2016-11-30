@@ -9,14 +9,21 @@ block content
       div.row
         p.col-md-12 Schedule
       div.clearfix
-        for session in sessions 
-          div.row.bg-primary
-            div.col-md-8 
-              h3= session.title
-            div.col-md-4= session.starttime
-          div.row
-            div.col-md-12= session.speaker       
-          div.clearfix
+        for session in sessions           
+          if session.special
+            div.row.bg-info
+              div.col-md-7.col-md-offset-1= session.title
+              div.col-md-4= session.starttime
+            div.clearfix
+          else
+            div.row.bg-primary
+              div.col-md-1
+                span.glyphicon.glyphicon-plus
+              div.col-md-7= session.title
+              div.col-md-4= session.starttime
+            div.row
+              div.col-md-11.col-md-offset-1= session.speaker       
+            div.clearfix
 
   footer.container-fluid
     div.row

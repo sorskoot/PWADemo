@@ -20,7 +20,7 @@ router.get('/speakers', function (req, res) {
     res.json(speakers.sort());
 });
 router.get('/speaker/:name', function (req, res) {
-    res.json(scheduleData.filter(d => !~d.speaker.indexOf(req.params.name) ? d : undefined));
+   res.json(scheduleData.filter(d => !!~d.speaker.map(s=>s.toLowerCase()).indexOf(req.params.name) ? d : undefined));
 });
 
 router.get('/rooms', function (req, res) {
