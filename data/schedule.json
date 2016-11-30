@@ -59,7 +59,7 @@
 		"endtime" : "9-12-2016 15:15"
 	}, {
 		"room" : "Lindbergh 2",
-		"speaker" : ["Dennis van de Stelt"],
+		"speaker" : ["Dennis van der Stelt"],
 		"title" : "Nservicebus 6",
 		"description" : "De nieuwste versie (v6) van NServiceBus is beschikbaar. Dennis zal laten zien dat deze helemaal klaar is voor async/await en welke nieuwe features gericht zijn op Azure Service Bus e.d.",
 		"starttime" : "9-12-2016 15:30",
