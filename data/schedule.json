@@ -1,20 +1,20 @@
 [{
 		"room" : "Lindbergh 1",
-		"speaker" : "Cornell Knulst",
+		"speaker" : ["Cornell Knulst"],
 		"title" : "Chatops",
 		"description" : "ntb",
 		"starttime" : "9-12-2016 10:00",
 		"endtime" : "9-12-2016 11:00"
 	}, {
 		"room" : "Lindbergh 1",
-		"speaker" : "Gerald Versluis",
+		"speaker" : ["Gerald Versluis"],
 		"title" : "Playtime is over: building real apps with Xamarin.Forms ",
 		"description" : "We kunnen onderhand wel zeggen dat Xamarin volwassen is geworden. Het is de hobby-fase voorbij en het is genoeg doorontwikkeld om er echte apps mee te bouwen! Tijdens deze sessie zal ik laten zien hoe je gemakkelijk een architectuur opzet voor je Xamarin.Forms app compleet met MVVM, data-binding en commanding, communicatie met een REST API backend, layouts in XAML, en alles wat er verder nog binnen de tijd past",
 		"starttime" : "9-12-2016 11:15",
 		"endtime" : "9-12-2016 12:15"
 	}, {
 		"room" : "",
-		"speaker" : "",
+		"speaker" : [],
 		"title" : "Lunch",
 		"description" : "",
 		"starttime" : "9-12-2016 12:15",
@@ -22,16 +22,109 @@
 		"special" : true
 	}, {
 		"room" : "Lindbergh 1",
-		"speaker" : "Dennis Doomen",
+		"speaker" : ["Dennis Doomen"],
 		"title" : "How to practice TDD without shooting yourself in the foot",
 		"description" : "It's 2016, so practices like Test Driven Development (TDD) have long found their way into organizations. However, the practices and principles to keep those unit tests maintainable haven't really changed. Still, I regularly talk to developers that somehow ended up with an incomprehensible unmaintainable set of unit tests that they once believed in, but are now holding them back. So in this session I like to provide a refresh of those fundamental ideas and talk about why you should practice TDD, revealing intentions, naming conventions, state versus interaction based testing, and how to stay out of the debugger hell with proper mocking and assertion frameworks. And even if you believe you are well versed in the testing realm, join me anyway. Maybe we can learn some tips & tricks from the audience as well. Looking forward to it!",
 		"starttime" : "9-12-2016 13:00",
 		"endtime" : "9-12-2016 14:00"
 	}, {
 		"room" : "Lindbergh 1",
-		"speaker" : "Timmy Kokke",
+		"speaker" : ["Timmy Kokke"],
 		"title" : "Progressive Web Apps",
 		"description" : "Hebben native apps nog een toekomst? Of ligt het lot in de handen van het web? Anders dan bij traditionele applicaties, bieden Progressive Web Apps een hybride oplossing tussen normale websites en mobiele applicaties. Dit nieuwe model combineert features van moderne browsers met de voordelen van een mobiele app. Grote browserfabrikanten als Google, Apple en Microsoft dragen bij aan de ontwikkeling van nieuwe webstandaarden die een veilige, native-like app ervaring gaan bieden vanuit het web. In deze sessie bekijken we wat een Progressive Web App is. Ook kijken we hoe we moderne webstandaarden als Service Workers en het W3C Manifest kunnen gebruiken om een bestaande, responsive website uit te breiden tot een Progressive Web App.",
+		"starttime" : "9-12-2016 15:30",
+		"endtime" : "9-12-2016 16:30"
+	}
+
+	, {
+		"room" : "Lindbergh 2",
+		"speaker" : ["Sander van de Velde","Jan Willem Groenenberg"],
+		"title" : "The Things Netwerk of, hoe koppel ik afgelegen devices aan het IoT Platform",
+		"description" : "Het bouwen van een Internet of Things oplossing brengt nogal wat uitdagingen met zich mee. Eén daarvan is het overbruggen van de afstand tussen sensor en back-end. Er zijn verschillende aanbieders van draadloze netwerken, The Things Network is een Nederlands initiatief voor een community based Lora netwerk. In deze sessie zullen Sander van de Velde en Jan Willem Groenenberg verder ingaan op de mogelijkheden om devices te ontsluiten via The Things Network en het Azure IoT Platform.",
+		"starttime" : "9-12-2016 10:00",
+		"endtime" : "9-12-2016 11:00"
+	}, {
+		"room" : "Lindbergh 2",
+		"speaker" : ["Ramon Smits "],
+		"title" : "Designing your system for Black Friday",
+		"description" : "Elke IT'er is bekend met het Slashdot effect. Ontdek wat de meest voorkomende oorzaken zijn die er voor zorgen dat een systeem implodeert. Leer van mijn fouten en hoe deze zijn opgelost.",
+		"starttime" : "9-12-2016 11:15",
+		"endtime" : "9-12-2016 12:15"
+	}, {
+		"room" : "Lindbergh 2",
+		"speaker" : ["Dennis van der Stelt","Ramon Smits"],
+		"title" : "QA Architectuur en Distributed",
+		"description" : "Kom met je vragen en Distributed systems vragen naar deze sessie. Alles over NServiceBus, Microservices, SOA, Async etc. Dennis en Ramon hebben veel ervaring op dit gebied en zij kunnen je helpen om valkuilen te ontlopen",
+		"starttime" : "9-12-2016 14:15",
+		"endtime" : "9-12-2016 15:15"
+	}, {
+		"room" : "Lindbergh 2",
+		"speaker" : ["Dennis van de Stelt"],
+		"title" : "Nservicebus 6",
+		"description" : "De nieuwste versie (v6) van NServiceBus is beschikbaar. Dennis zal laten zien dat deze helemaal klaar is voor async/await en welke nieuwe features gericht zijn op Azure Service Bus e.d.",
+		"starttime" : "9-12-2016 15:30",
+		"endtime" : "9-12-2016 16:30"
+	}, {
+		"room" : "Lindbergh 3",
+		"speaker" : ["Dick Moffat"],
+		"title" : "Introducing Microsoft’s Power BI",
+		"description" : "An overview of Power BI and Power BI Desktop. The reasons for it and the differences between the two products",
+		"starttime" : "9-12-2016 10:00",
+		"endtime" : "9-12-2016 11:00"
+	}, {
+		"room" : "Lindbergh 3",
+		"speaker" : ["Dick Moffat "],
+		"title" : "Report Data Management In Excel ",
+		"description" : "This session will be focused on explaining the Data-specific features added to Excel in the last few years that are widely misunderstood or not known at all. This session will detail techniques for sourcing data in to Excel for use in reports (specifically in Power BI).",
+		"starttime" : "9-12-2016 11:15",
+		"endtime" : "9-12-2016 12:15"
+	}, {
+		"room" : "Lindbergh 3",
+		"speaker" : ["David Hoppe"],
+		"title" : "Custom charting in Excel",
+		"description" : "create dynamic data visualizations in Excel without VBA",
+		"starttime" : "9-12-2016 13:00",
+		"endtime" : "9-12-2016 14:00"
+	}, {
+		"room" : "Lindbergh 3",
+		"speaker" : ["Dick Moffat"],
+		"title" : "Producing Power BI “Content” Using Excel",
+		"description" : "An hour detailing best practices that I have developed for using Excel for staging data for Power BI Desktop and Power BI. I will discuss the practical advantages of Excel over most other options. I will demonstrate how easy it can be to create solutions in Excel for Power BI by doing a “live” creation of a Power BI Desktop solution fro scratch with previously unseen data.",
+		"starttime" : "9-12-2016 14:15",
+		"endtime" : "9-12-2016 15:15"
+	}, {
+		"room" : "Schweitzer 2",
+		"speaker" : ["Marco Cantù"],
+		"title" : "Delphi Today and Tomorrow",
+		"description" : "In this session, Delphi Product manager Marco Cantu will make an assessment of where Delphi is today, its recent evolution, and the plans for the near future. The session will highlight the core features of the product, along with their directions.",
+		"starttime" : "9-12-2016 10:00",
+		"endtime" : "9-12-2016 11:00"
+	}, {
+		"room" : "Schweitzer 2",
+		"speaker" : ["Andrea Magni"],
+		"title" : "MARS-Curiosity: a REST library for Embarcadero Delphi",
+		"description" : "MARS-Curiosity is an open source library to build REST application servers and clients in Delphi. It provides developers a clean, easy way to build a standard REST API (to be consumed by any Delphi or non Delphi technology out there, web technologies included) with the addition of some very Delphi-oriented features like design time support and FireDAC integration to take advantage when building Delphi clients for Delphi servers (mobile or desktop).This session will provide an overview of the library and will show some practical demos.",
+		"starttime" : "9-12-2016 11:15",
+		"endtime" : "9-12-2016 12:15"
+	}, {
+		"room" : "Schweitzer 2",
+		"speaker" : ["Marco Cantù"],
+		"title" : "Windows 10 from WinRT to Centennial",
+		"description" : "In this session Marco will explore the main features in Delphi's RTL, VCL and IDE specifically related with Windows 10. We'll explore new VCL controls for Windows 10 UI, the low level support for WinRT, and the ability to distribute applications as .appx packages using the Windows Desktop Bridge (aka Centennial) on the Windows 10 Store.",
+		"starttime" : "9-12-2016 13:00",
+		"endtime" : "9-12-2016 14:00"
+	}, {
+		"room" : "Schweitzer 2",
+		"speaker" : ["Andrea Magni"],
+		"title" : "TFrameStand: build stunning UI with TFrames",
+		"description" : "Especially on mobile, visual continuity and beautiful transitions are a must for each developer!Learn how to use TFrameStand to easily split your app in several frames and have a chance to orchestrate transitions and effects with no effort.This technology (open-source and available through GetIt) has proven its effectiveness in real use applications and it strongly simplifies mobile development with Delphi.This session will provide an overview of the library and will show some practical demos.",
+		"starttime" : "9-12-2016 14:15",
+		"endtime" : "9-12-2016 15:15"
+	}, {
+		"room" : "Schweitzer 2",
+		"speaker" : ["Marco Cantù"],
+		"title" : "Publishing Delphi Mobile Apps in Stores",
+		"description" : "This session focused on practical tips taken from the direct experience Marco did publishing a mobile (FireMonkey) application in the Google Play Store and Apple AppStore for Android and iOS. From versioning to delivery tips, from issues with local files to advertising ideas, the session is all focused on direct experience -- for the good and the bad. ",
 		"starttime" : "9-12-2016 15:30",
 		"endtime" : "9-12-2016 16:30"
 	}

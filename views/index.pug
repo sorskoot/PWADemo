@@ -1,12 +1,24 @@
 ﻿extends layout
 
 block content
-  div.container
+  div.container-fluid
     div.content
       div.page-header
-        h1 #{title} 
-          small PWA Demo App
+        h1 SDN Event
+          small December 2016
       div.row
-        p.span12 Welcome to #{title}
-        div.span4 #{env}
-        div.span8 #{insights}
+        p.col-md-12 Schedule
+      div.clearfix
+        for session in sessions 
+          div.row.bg-primary
+            div.col-md-8 
+              h3= session.title
+            div.col-md-4= session.starttime
+          div.row
+            div.col-md-12= session.speaker       
+          div.clearfix
+
+  footer.container-fluid
+    div.row
+      div.col-md-4 #{env}
+      div.col-md-8 #{insights}
