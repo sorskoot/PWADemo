@@ -25,8 +25,8 @@ gulp.task("deploy", function () {
 
 
 gulp.task('copy-images', function () {
-  return gulp.src(['./sass/*.png', './sass/*.ttf', './sass/*.woff'])
-         .pipe(gulp.dest('./public/stylesheets'));
+  return gulp.src(['./sass/*.jpg','./sass/*.png', './sass/*.ttf', './sass/*.woff'])
+         .pipe(gulp.dest('./public/images'));
 })
 
 function doWebpack(minify) {

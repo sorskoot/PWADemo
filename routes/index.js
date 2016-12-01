@@ -5,12 +5,13 @@ var scheduleData = require('../data/schedule');
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    let sessions = scheduleData;
-    res.render('index', { 
-        title: 'Express',
-        sessions:sessions,
-        env: process.env.NODE_ENV, 
-        insights:process.env.APP_INSIGHTS 
+    let sessions = scheduleData.sort((a, b) =>
+        parseInt(a.starttime.replace(":", "") - parseInt(b.starttime.replace(":", ""))));
+    res.render('index', {
+        title: 'SDN Event - Schedule',
+        sessions: sessions,
+        env: process.env.NODE_ENV,
+        insights: process.env.APP_INSIGHTS
     });
 });
 

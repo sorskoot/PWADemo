@@ -2,6 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var scheduleData = require('../data/schedule');
+const pug = require('pug');
 
 router.get('/', function (req, res) {
     res.send('API');
@@ -20,7 +21,11 @@ router.get('/speakers', function (req, res) {
     res.json(speakers.sort());
 });
 router.get('/speaker/:name', function (req, res) {
-   res.json(scheduleData.filter(d => !!~d.speaker.map(s=>s.toLowerCase()).indexOf(req.params.name) ? d : undefined));
+    let speakers = scheduleData.filter(d => !!~d.speaker.map(s => s.toLowerCase()).indexOf(req.params.name) ? d : undefined);
+    var c = pug.renderFile('views/test.pug', {speaker:req.params.name, sessions:speakers });
+    res.send(new Buffer(c));
+
+    //res.json(scheduleData.filter(d => !!~d.speaker.map(s=>s.toLowerCase()).indexOf(req.params.name) ? d : undefined));
 });
 
 router.get('/rooms', function (req, res) {

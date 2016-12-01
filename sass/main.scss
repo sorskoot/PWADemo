@@ -1,14 +1,17 @@
 @import 'bootstrap/_bootstrap';
 @import 'variables';
 
-.test{
-    background-color:red;
-}
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+    padding-top:50px;
 }
 
-a {
-    color:$maincolor;
+.header{
+    background-color:$maincolor;    
 }
+
+.navbar-default .navbar-nav > li > a, 
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+

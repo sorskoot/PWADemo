@@ -5,11 +5,18 @@ html
     link(rel='stylesheet', href='/stylesheets/main.css')
 
   body
-    nav.navbar.navbar-default.navbar-static-top
-      div.container-fluid
+    nav.navbar.navbar-default.navbar-fixed-top.header
+      div.container
         div.navbar-header
-          div.navbar-brand SDN Event
-        div.collapse.navbar-collapse
+        button(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false").navbar-toggle.collapsed
+          span.sr-only
+            | Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar  
+        div.navbar-header
+          div.navbar-brand SDN Event Schedule                       
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li 
               a(href='/') schedule 
@@ -17,6 +24,6 @@ html
             li
               a(href="/speakers") speakers
                
-    block content
+  block content
 
-    script(src='/scripts/index.js')
+  script(src='/scripts/index.js')
