@@ -29,6 +29,11 @@ gulp.task('copy-images', function () {
          .pipe(gulp.dest('./public/images'));
 })
 
+gulp.task('copy-sw', function () {
+  return gulp.src(['./src/sw.js'])
+         .pipe(gulp.dest('./public'));
+})
+
 function doWebpack(minify) {
   var plugs = [],
       devTool;
@@ -85,5 +90,5 @@ gulp.task('js-release', function () {
   .pipe(gulp.dest("public/scripts"));
 });
 
-gulp.task("compile", ['copy-images', 'sass', 'js']);
-gulp.task("compile-release", ['copy-images', 'sass', 'js-release']);
+gulp.task("compile", ['copy-images', 'sass', 'js','copy-sw']);
+gulp.task("compile-release", ['copy-images', 'sass', 'js-release','copy-sw']);

@@ -3,9 +3,13 @@
 block content
   div.container
     div.content
-      div.page-header
-        h1 SDN Event
-          small &nbsp; December 2016      
+      div.row      
+        div.col-md-9.page-header    
+          h1 SDN Event
+            small &nbsp; December 2016      
+        div.col-md-3
+          img(src='images/SDN_Logo.png' width=230 height=74 style='margin-top:50px')
+
       for session in sessions           
         if session.special
           div.panel.panel-success
@@ -31,7 +35,7 @@ block content
             div.panel-body
               div.row
                 div.col-md-12= session.description       
-  footer.container-fluid
-    div.row
-      div.col-md-4 #{env}
-      div.col-md-8 #{insights}
+  //- footer.container-fluid
+  //-   div.row
+  //-     div.col-md-4 #{env}
+  //-     div.col-md-8 #{insights}

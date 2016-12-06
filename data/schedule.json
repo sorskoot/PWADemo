@@ -1,8 +1,8 @@
 [{
 		"room" : "Lindbergh 1",
 		"speaker" : ["Cornell Knulst"],
-		"title" : "Chatops",
-		"description" : "ntb",
+		"title" : "ChatOps on the Microsoft stack, a DevOps accelerator",
+		"description" : "In this session, we take a practical approach to see how ChatOps can put your DevOps team into the next gear. We touch briefly on the history and mean of ChatOps. What is it and why should we do it? After that, we guide you in a practical manner through the first steps of implementing ChatOps on the Microsoft stack. We will show you how to integrate your preferred communication channel with different chatbots, how to create a chatbot that executes the different instructions you type in and we’ll discuss some best practices of implementing ChatOps in the enterprise.",
 		"starttime" : "10:00",
 		"endtime" : "11:00"
 	}, {
