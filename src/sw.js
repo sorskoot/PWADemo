@@ -1,8 +1,7 @@
 var CACHE_NAME = 'SDN-demo-site-cache-v1';
 var urlsToCache = [
   '/',
-  '/speakers',
-  '/api/speaker/timmy%20kokke',
+  '/speakers',  
   '/stylesheets/main.css',
   '/scripts/index.js',
   '/images/SDN_Logo.png'
