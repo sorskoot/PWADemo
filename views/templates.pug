@@ -1,0 +1,43 @@
+script#speakersTemplate(type="text/template") 
+  div.page-header
+    h1 {{speaker}}
+      small &nbsp; Sessions
+    | {{#speakerTemplate}}
+
+script#speakerTemplate(type="text/template")
+  div.panel.panel-primary
+    div.panel-heading
+      div.row
+        div.col-md-8 {{title}}
+          div 
+            em {{speaker}} 
+        div.col-md-4
+          span {{starttime}}
+          | &nbsp;&#8209;&nbsp;
+          span {{endtime}}
+
+script#specialSessionTemplate(type="text/template")
+  div.panel.panel-success
+    div.panel-heading
+      div.row
+        div.col-md-8 {{title}}
+        div.col-md-4
+          span {{starttime}}
+          | &nbsp;&#8209;&nbsp;
+          span {{endtime}}
+
+script#sessionTemplate(type="text/template")
+  div.panel.panel-primary
+    div.panel-heading
+      div.row
+        div.col-md-5 {{title}}
+        div.col-md-3 {{speaker}}
+        div.col-md-2
+          span {{starttime}}                    
+          | &nbsp;&#8209;&nbsp;
+          span {{endtime}}
+        div.col-md-2
+          span {{room}}                                      
+    div.panel-body
+      div.row
+        div.col-md-12 {{description}}                

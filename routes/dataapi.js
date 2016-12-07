@@ -20,12 +20,13 @@ router.get('/speakers', function (req, res) {
     }
     res.json(speakers.sort());
 });
-router.get('/speaker/:name', function (req, res) {
-    let speakers = scheduleData.filter(d => !!~d.speaker.map(s => s.toLowerCase()).indexOf(req.params.name) ? d : undefined);
-    var c = pug.renderFile('views/test.pug', {speaker:req.params.name, sessions:speakers });
-    res.send(new Buffer(c));
 
-    //res.json(scheduleData.filter(d => !!~d.speaker.map(s=>s.toLowerCase()).indexOf(req.params.name) ? d : undefined));
+router.get('/speaker/:name', function (req, res) {
+    // let speakers = scheduleData.filter(d => !!~d.speaker.map(s => s.toLowerCase()).indexOf(req.params.name) ? d : undefined);
+    // var c = pug.renderFile('views/test.pug', {speaker:req.params.name, sessions:speakers });
+    // res.send(new Buffer(c));
+
+    res.json(scheduleData.filter(d => !!d.speaker.filter(n => n.toLowerCase().match(req.params.name.toLowerCase())).length));
 });
 
 router.get('/rooms', function (req, res) {
@@ -41,7 +42,12 @@ router.get('/rooms', function (req, res) {
 
 
 router.get('/sessions', function (req, res) {
+    pausecomp(1500);
     res.json(scheduleData);
 });
 
+function pausecomp(ms) {
+    ms += new Date().getTime();
+    while (new Date() < ms) { }
+}
 module.exports = router;

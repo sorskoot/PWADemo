@@ -10,9 +10,8 @@ var routes = require('./routes/index');
 var speakers = require('./routes/speakers');
 var dataService = require('./routes/dataapi');
 
-var appInsights = require("applicationinsights");
-
-appInsights.setup(process.env.APP_INSIGHTS||"ca5b8864-36d6-4a95-8107-001c7aca2bfa").start();
+//var appInsights = require("applicationinsights");
+//appInsights.setup(process.env.APP_INSIGHTS||"ca5b8864-36d6-4a95-8107-001c7aca2bfa").start();
 
 var app = express();
 

@@ -8,33 +8,17 @@ block content
           h1 SDN Event
             small &nbsp; December 2016      
         div.col-md-3
-          img(src='images/SDN_Logo.png' width=230 height=74 style='margin-top:50px')
+          img(src='images/SDN_Logo.jpg' width=230 height=74 style='margin-top:50px')
+    #sessionResult.content      
+      div.spinner
+        div.rect1
+        div.rect2
+        div.rect3
+        div.rect4
+        div.rect5
 
-      for session in sessions           
-        if session.special
-          div.panel.panel-success
-            div.panel-heading
-              div.row
-                div.col-md-8= session.title
-                div.col-md-4
-                  span= session.starttime
-                  | &nbsp;&#8209;&nbsp;
-                  span= session.endtime
-        else
-          div.panel.panel-primary
-            div.panel-heading
-              div.row
-                div.col-md-5= session.title
-                div.col-md-3= session.speaker
-                div.col-md-1
-                  span= session.starttime                    
-                  | &nbsp;&#8209;&nbsp;
-                  span= session.endtime
-                div.col-md-2
-                  span= session.room                                      
-            div.panel-body
-              div.row
-                div.col-md-12= session.description       
+
+
   //- footer.container-fluid
   //-   div.row
   //-     div.col-md-4 #{env}

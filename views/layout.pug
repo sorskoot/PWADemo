@@ -1,9 +1,9 @@
 ﻿doctype html
 html
   head
-    title= title
+    title= title    
     link(rel='stylesheet', href='/stylesheets/main.css')
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")    
     link(rel="manifest" href="manifest.json")
   body
     nav.navbar.navbar-default.navbar-fixed-top.header
@@ -24,7 +24,9 @@ html
                 span.sr-only (current)
             li
               a(href="/speakers") speakers
-               
+
   block content
+
+  include templates
 
   script(src='/scripts/index.js')
