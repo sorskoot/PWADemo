@@ -8,7 +8,7 @@ var urlsToCache = [
 ];
 var preCache = [
   '/speakers',
-  '/api/speaker/timmy%20kokke',
+  '/api/speaker/timmy%20kokke'
 ];
 
 self.addEventListener("install", e => {
