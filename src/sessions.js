@@ -1,8 +1,8 @@
 (function () {
     let templater = require('./templater');
-    
+
     initialize();
-    
+
     function initialize() {
         if ($('#sessionResult')[0]) {
             fetch('/api/sessions').then(r => r.json().then(handleResponse))
@@ -24,4 +24,4 @@
             }
         }
     }
-})();    
+})();
