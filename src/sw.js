@@ -3,7 +3,7 @@ var urlsToCache = [
   '/',
   '/stylesheets/main.css',
   '/scripts/index.js',
-  '/images/SDN_Logo.jpg',
+  '/images/SDN_Logo.png',
   '/api/sessions'
 ];
 var preCache = [
@@ -12,14 +12,17 @@ var preCache = [
 ];
 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE_NAME).then(cache => {
-    cache.addAll(preCache.map(url => new Request(url, { "mode": "no-cors" })));
-    return cache.addAll(urlsToCache.map(url => new Request(url, { "mode": "no-cors" })))
-  }))
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(
+      cache => {
+        cache.addAll(preCache.map(url => new Request(url, { "mode": "no-cors" })));
+        return cache.addAll(urlsToCache.map(url => new Request(url, { "mode": "no-cors" })))
+      }))
 })
 
 self.addEventListener("fetch", event => {
-  event.respondWith(caches.match(event.request).then(response =>
-    response ? response : fetch(event.request)
-  ))
+  event.respondWith(
+    caches.match(event.request).then(
+      response => response ? response : fetch(event.request)
+    ))
 })
